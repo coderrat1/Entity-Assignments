@@ -1,0 +1,3 @@
+C:\WORK\connected\connected\obj\Debug\connected.csproj.AssemblyReference.cache
+C:\WORK\connected\connected\obj\Debug\connected.csproj.SuggestedBindingRedirects.cache
+C:\WORK\connected\connected\obj\Debug\connected.csproj.CoreCompileInputs.cache
