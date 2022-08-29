@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+
+<h2>Search For Update</h2>
+
+@using (Html.BeginForm("SearchForUpdate", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    
+    <div class="alert-danger">@ViewBag.NoData</div>
+    <div class="alert-success">@ViewBag.SuccessMessage</div>
+    <div class="alert-danger">@ViewBag.DangerMessage</div>
+
+    <div class="form-horizontal">
+        <hr />
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            <span class="control-label col-md-2">Enter Id or Name: </span>
+
+            <div class="col-md-10">
+                <input type="text" name="input" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Search" class=" " />
+            </div>
+        </div>
+    </div>
+}
